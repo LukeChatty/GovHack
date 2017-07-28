@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					D894B6671F2B5753005CF741 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6GASZMH22X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6GASZMH22X;
 				INFOPLIST_FILE = Durango.AxisPowers.Tech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cgscomputing.NathanHeldon.Durango-AxisPowers-Tech";
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6GASZMH22X;
 				INFOPLIST_FILE = Durango.AxisPowers.Tech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cgscomputing.NathanHeldon.Durango-AxisPowers-Tech";
