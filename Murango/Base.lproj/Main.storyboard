@@ -205,6 +205,7 @@
                             <constraint firstItem="uiJ-ab-aoU" firstAttribute="top" secondItem="Xl6-If-3bC" secondAttribute="bottom" constant="75" id="MWE-kd-LMZ"/>
                             <constraint firstItem="uiJ-ab-aoU" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="S13-Xq-l4B"/>
                             <constraint firstItem="iIQ-T1-Ezh" firstAttribute="top" secondItem="FTW-EH-q0H" secondAttribute="bottom" constant="8" id="awg-Vs-X2o"/>
+                            <constraint firstItem="iIQ-T1-Ezh" firstAttribute="top" secondItem="FTW-EH-q0H" secondAttribute="bottom" constant="8" id="f8a-UT-AxD"/>
                             <constraint firstItem="Xl6-If-3bC" firstAttribute="top" secondItem="Lu2-5Y-phF" secondAttribute="bottom" id="gju-hW-JT6"/>
                             <constraint firstItem="CL9-co-6cR" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="gvO-hO-Mhy"/>
                             <constraint firstItem="uiJ-ab-aoU" firstAttribute="leading" secondItem="WuU-QG-ZaZ" secondAttribute="leading" constant="66" id="kTg-qe-Ytl"/>
@@ -229,6 +230,7 @@
                         <outlet property="collectionView" destination="IwZ-4y-z8Y" id="tyW-q0-gbO"/>
                         <outlet property="riskRatingBar" destination="uiJ-ab-aoU" id="vf1-OW-qTT"/>
                         <outlet property="riskRatingLabel" destination="CL9-co-6cR" id="vip-c1-dac"/>
+                        <outlet property="textBox" destination="FTW-EH-q0H" id="Div-L2-a0F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2q-bP-Qwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,10 +263,9 @@
                                     <segue destination="xdF-LL-IIn" kind="show" id="AJv-H2-TB9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Murango - GovHack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-97-EOh">
-                                <rect key="frame" x="59" y="28" width="278" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Murango" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-97-EOh">
+                                <rect key="frame" x="35.5" y="156" width="304" height="88"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="81"/>
                                 <color key="textColor" red="0.94948769740000005" green="1" blue="0.95826511810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -273,6 +274,8 @@
                         <constraints>
                             <constraint firstItem="50i-BW-61Y" firstAttribute="centerX" secondItem="4hY-rX-Vat" secondAttribute="centerX" id="BGi-oC-bdz"/>
                             <constraint firstAttribute="height" secondItem="50i-BW-61Y" secondAttribute="height" id="H4o-kc-1YI"/>
+                            <constraint firstItem="4MS-97-EOh" firstAttribute="centerX" secondItem="4hY-rX-Vat" secondAttribute="centerX" id="M5A-6L-Gjo"/>
+                            <constraint firstItem="4MS-97-EOh" firstAttribute="top" secondItem="cuo-dz-PbS" secondAttribute="bottom" constant="136" id="amf-dp-hLZ"/>
                             <constraint firstItem="50i-BW-61Y" firstAttribute="centerY" secondItem="4hY-rX-Vat" secondAttribute="centerY" id="i3Y-Nd-o9a"/>
                             <constraint firstAttribute="width" secondItem="50i-BW-61Y" secondAttribute="width" id="sBL-aF-Wo4"/>
                         </constraints>
@@ -289,7 +292,7 @@
         <image name="mapsPointerIcon" width="100" height="165"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AJv-H2-TB9"/>
         <segue reference="jJy-nR-1RL"/>
-        <segue reference="YdA-vF-nDH"/>
     </inferredMetricsTieBreakers>
 </document>

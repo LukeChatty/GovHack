@@ -17,6 +17,7 @@ class RegionInfoViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var riskRatingLabel: UILabel!
     @IBOutlet weak var riskRatingBar: UIView!
+    @IBOutlet weak var textBox: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,13 @@ class RegionInfoViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
         riskRatingLabel.text = String(riskRating)
         
         colourBar(value: riskRating)
         
         //riskRatingBar.roundCorners(corners: [.topRight, .bottomLeft, .bottomRight, .topLeft], radius: 10)
+        
+        textBox.isEditable = false
         
     }
     
