@@ -25,8 +25,11 @@ func readCSVFile(fileName:String, fileType: String)-> [[String]]!{
 }
 
 
-func readFile() {
-    print(safetyRating(dictionary: CSVDataToPoints(data: readCSVFile(fileName: "CrimeStats", fileType: "csv"))))
+func readFile() -> [String: Int] {
+    //var array = [safetyRating(dictionary: CSVDataToPoints(data: readCSVFile(fileName: "CrimeStats", fileType: "csv")))), readCSVFile(fileName: "CrimeStats", fileType: "csv")]
+    
+    return safetyRating(dictionary: CSVDataToPoints(data: readCSVFile(fileName: "CrimeStats", fileType: "csv")))
+    
 }
 
 
@@ -51,9 +54,9 @@ func CSVDataToPoints(data: [[String]]) -> [String: [Double]] {
     
     for i in 0 ... data.count-1 {
         
-        print(data[i][0])
         var array = [Double]()
         for j in 1...data[i].count-1 {
+            
             let amendedData = Int(data[i][j])! * 100
             var amendedDataDouble = Double(amendedData)
             amendedDataDouble = amendedDataDouble * pointsArray[j-1]

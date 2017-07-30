@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3AFCDC01F2C06BE00B35FEB /* CrimeStats.csv in Resources */ = {isa = PBXBuildFile; fileRef = A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */; };
+		A3AFCDC21F2C06C900B35FEB /* ReadCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */; };
+		A3AFCDC41F2D414000B35FEB /* RegionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */; };
 		D894B66C1F2B5753005CF741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B66B1F2B5753005CF741 /* AppDelegate.swift */; };
 		D894B66E1F2B5753005CF741 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B66D1F2B5753005CF741 /* ViewController.swift */; };
 		D894B6711F2B5753005CF741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D894B66F1F2B5753005CF741 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CrimeStats.csv; sourceTree = "<group>"; };
+		A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadCSV.swift; sourceTree = "<group>"; };
+		A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionInfoViewController.swift; path = ../RegionInfoViewController.swift; sourceTree = "<group>"; };
 		D894B6681F2B5753005CF741 /* Durango.AxisPowers.Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Durango.AxisPowers.Tech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D894B66B1F2B5753005CF741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D894B66D1F2B5753005CF741 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +60,15 @@
 		D894B66A1F2B5753005CF741 /* Durango.AxisPowers.Tech */ = {
 			isa = PBXGroup;
 			children = (
+				A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */,
 				D894B66B1F2B5753005CF741 /* AppDelegate.swift */,
 				D894B66D1F2B5753005CF741 /* ViewController.swift */,
 				D894B66F1F2B5753005CF741 /* Main.storyboard */,
 				D894B6721F2B5753005CF741 /* Assets.xcassets */,
 				D894B6741F2B5753005CF741 /* LaunchScreen.storyboard */,
 				D894B6771F2B5753005CF741 /* Info.plist */,
+				A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */,
+				A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */,
 			);
 			path = Durango.AxisPowers.Tech;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 				D894B6761F2B5753005CF741 /* LaunchScreen.storyboard in Resources */,
 				D894B6731F2B5753005CF741 /* Assets.xcassets in Resources */,
 				D894B6711F2B5753005CF741 /* Main.storyboard in Resources */,
+				A3AFCDC01F2C06BE00B35FEB /* CrimeStats.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AFCDC41F2D414000B35FEB /* RegionInfoViewController.swift in Sources */,
+				A3AFCDC21F2C06C900B35FEB /* ReadCSV.swift in Sources */,
 				D894B66E1F2B5753005CF741 /* ViewController.swift in Sources */,
 				D894B66C1F2B5753005CF741 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +316,7 @@
 				D894B67C1F2B5753005CF741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

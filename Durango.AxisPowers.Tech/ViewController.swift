@@ -12,30 +12,30 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
+    var riskRatings = [String: Int]()
     
-    
-    
-     @IBOutlet weak var Map: MKMapView!
-    
-    
+    @IBOutlet weak var Map: MKMapView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        print(readFile())
+        riskRatings = readFile()
+        
     }
     
-    
-    
-   
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationNavigationController = segue.destination as! UINavigationController
+        let targetController = destinationNavigationController.topViewController as! RegionInfoViewController
+
+        var title = segue.identifier
+        targetController.title = title
+        //targetController.riskRating = riskRatings[title]
+    }
     
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
