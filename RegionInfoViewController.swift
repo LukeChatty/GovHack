@@ -12,7 +12,7 @@ class RegionInfoViewController: UIViewController, UICollectionViewDelegate, UICo
     
     var riskRating = Int()
     var crimeValues = [Int]()
-    var crimeNames = ["Homicides", "Sexual Assaults", "Assaults", "Traffic Infringements", "Robberies", "Car Thefts", "Thefts", "Road Fatalies", "Road Injuries"]
+    var crimeNames = ["Homicides", "Sexual Assaults", "Assaults", "Traffic Infringements", "Robberies", "Car Thefts", "Thefts", "Road Fatalities", "Road Injuries"]
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var riskRatingLabel: UILabel!
