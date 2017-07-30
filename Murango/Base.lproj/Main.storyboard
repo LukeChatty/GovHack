@@ -172,7 +172,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Info" id="VAI-Y7-ghH">
                             <connections>
-                                <segue destination="hoY-ZU-iM1" kind="show" id="rwI-iQ-dUe"/>
+                                <segue destination="hoY-ZU-iM1" kind="show" identifier="info" id="rwI-iQ-dUe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

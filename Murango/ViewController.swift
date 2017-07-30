@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != "home" {
+        if segue.identifier != "home" && segue.identifier != "info" {
             let destinationNavigationController = segue.destination as! UINavigationController
             let targetController = destinationNavigationController.topViewController as! RegionInfoViewController
 
