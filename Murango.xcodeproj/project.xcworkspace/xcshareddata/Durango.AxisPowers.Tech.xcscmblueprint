@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B916283",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B916283" : 9223372036854775807,
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B6666CC" : 9223372036854775807,
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++042A010" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "56E12A37-F731-4ED9-BEDE-F636D78A8902",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B916283" : "GovHack\/",
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B6666CC" : "",
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++042A010" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Durango.AxisPowers.Tech",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Durango.AxisPowers.Tech.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LukeChatty\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++042A010"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CGS-Nathan-Heldon\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B6666CC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LukeChatty\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++B916283"
+    }
+  ]
+}

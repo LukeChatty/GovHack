@@ -10,6 +10,8 @@ import UIKit
 
 class RegionInfoViewController: UIViewController {
     
+    var riskRating = Int()
+    
     
     @IBOutlet weak var riskRatingLabel: UILabel!
 
@@ -17,7 +19,7 @@ class RegionInfoViewController: UIViewController {
         super.viewDidLoad()
         
         
-        riskRatingLabel.text = "RISK RATING"
+        riskRatingLabel.text = "Risk Rating: \(String(riskRating))"
         
     }
     
@@ -32,31 +34,4 @@ class RegionInfoViewController: UIViewController {
     }
     */
 
-}
-
-class CollectionView: UICollectionView, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: IndexPath) -> CollectionViewCell {
-        print(1)
-
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "crimeCell", for: indexPath as IndexPath) as! CollectionViewCell
-        print(2)
-        
-        cell.crimeLabel.text = "Homicide"
-        cell.countLabel.text = "2"
-        
-        return cell
-    }
-
-    
-    
-}
-
-class CollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var crimeLabel: UILabel!
-    @IBOutlet weak var countLabel: UILabel!
-    
 }

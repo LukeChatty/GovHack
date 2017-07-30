@@ -25,14 +25,6 @@ func readCSVFile(fileName:String, fileType: String)-> [[String]]!{
 }
 
 
-func readFile() -> [String: Int] {
-    //var array = [safetyRating(dictionary: CSVDataToPoints(data: readCSVFile(fileName: "CrimeStats", fileType: "csv")))), readCSVFile(fileName: "CrimeStats", fileType: "csv")]
-    
-    return safetyRating(dictionary: CSVDataToPoints(data: readCSVFile(fileName: "CrimeStats", fileType: "csv")))
-    
-}
-
-
 func CSVToArray(data: String) -> [[String]] {
     var result: [[String]] = []
     let rows = data.components(separatedBy: "\r\n")
@@ -46,15 +38,49 @@ func CSVToArray(data: String) -> [[String]] {
     
 }
 
-func CSVDataToPoints(data: [[String]]) -> [String: [Double]] {
+func CSVDataToDictionary(data: [[String]]) -> [String:[Int]] {
+    
+    var results = [String:[Int]]()
+    
+    for i in 0 ... data.count-1 {
+    
+        var array = [Int]()
+    
+        for j in 1...data[i].count-1 {
+            array.append(Int(data[i][j])!)
+        }
+        
+        results[data[i][0]] = array
+    
+    }
+    
+    return results
+}
+
+func CSVDataToPoints(data: [String:[Int]]) -> [String: [Double]] {
     print("")
     let pointsArray = [1, 0.625, 0.5, 0.003125, 0.375, 0.375, 0.25, 0.5, 0.075]
     
     var results = [String:[Double]]()
     
-    for i in 0 ... data.count-1 {
+    for region in data {
+        
+        print(region.key)
+        print(region.value)
         
         var array = [Double]()
+        
+        for i in 0...region.value.count-1 {
+            let amendedData = region.value[i] * 100
+            var amendedDataDouble = Double(amendedData)
+            amendedDataDouble = amendedDataDouble * pointsArray[i]
+            array.append(amendedDataDouble)
+        }
+        
+        
+        results[region.key] = array
+        
+        /*var array = [Double]()
         for j in 1...data[i].count-1 {
             
             let amendedData = Int(data[i][j])! * 100
@@ -63,7 +89,7 @@ func CSVDataToPoints(data: [[String]]) -> [String: [Double]] {
             array.append(amendedDataDouble)
         }
         
-        results[data[i][0]] = array
+        results[data[i][0]] = array*/
         
     }
     
@@ -71,7 +97,7 @@ func CSVDataToPoints(data: [[String]]) -> [String: [Double]] {
     
 }
 
-func safetyRating(dictionary: [String: [Double]]) -> [String: Int] {
+func riskRating(dictionary: [String: [Double]]) -> [String: Int] {
     
     var safetyValues = [String: Int]()
     

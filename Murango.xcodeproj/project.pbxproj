@@ -10,6 +10,7 @@
 		A3AFCDC01F2C06BE00B35FEB /* CrimeStats.csv in Resources */ = {isa = PBXBuildFile; fileRef = A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */; };
 		A3AFCDC21F2C06C900B35FEB /* ReadCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */; };
 		A3AFCDC41F2D414000B35FEB /* RegionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */; };
+		A3AFCDC81F2D670800B35FEB /* CrimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AFCDC71F2D670800B35FEB /* CrimeCell.swift */; };
 		D894B66C1F2B5753005CF741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B66B1F2B5753005CF741 /* AppDelegate.swift */; };
 		D894B66E1F2B5753005CF741 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894B66D1F2B5753005CF741 /* ViewController.swift */; };
 		D894B6711F2B5753005CF741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D894B66F1F2B5753005CF741 /* Main.storyboard */; };
@@ -21,7 +22,8 @@
 		A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CrimeStats.csv; sourceTree = "<group>"; };
 		A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadCSV.swift; sourceTree = "<group>"; };
 		A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionInfoViewController.swift; path = ../RegionInfoViewController.swift; sourceTree = "<group>"; };
-		D894B6681F2B5753005CF741 /* Durango.AxisPowers.Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Durango.AxisPowers.Tech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AFCDC71F2D670800B35FEB /* CrimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCell.swift; sourceTree = "<group>"; };
+		D894B6681F2B5753005CF741 /* Murango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Murango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D894B66B1F2B5753005CF741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D894B66D1F2B5753005CF741 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D894B6701F2B5753005CF741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		D894B65F1F2B5753005CF741 = {
 			isa = PBXGroup;
 			children = (
-				D894B66A1F2B5753005CF741 /* Durango.AxisPowers.Tech */,
+				D894B66A1F2B5753005CF741 /* Murango */,
 				D894B6691F2B5753005CF741 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +54,12 @@
 		D894B6691F2B5753005CF741 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D894B6681F2B5753005CF741 /* Durango.AxisPowers.Tech.app */,
+				D894B6681F2B5753005CF741 /* Murango.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D894B66A1F2B5753005CF741 /* Durango.AxisPowers.Tech */ = {
+		D894B66A1F2B5753005CF741 /* Murango */ = {
 			isa = PBXGroup;
 			children = (
 				A3AFCDC31F2D414000B35FEB /* RegionInfoViewController.swift */,
@@ -69,16 +71,17 @@
 				D894B6771F2B5753005CF741 /* Info.plist */,
 				A3AFCDC11F2C06C900B35FEB /* ReadCSV.swift */,
 				A3AFCDBF1F2C06BE00B35FEB /* CrimeStats.csv */,
+				A3AFCDC71F2D670800B35FEB /* CrimeCell.swift */,
 			);
-			path = Durango.AxisPowers.Tech;
+			path = Murango;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D894B6671F2B5753005CF741 /* Durango.AxisPowers.Tech */ = {
+		D894B6671F2B5753005CF741 /* Murango */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D894B67A1F2B5753005CF741 /* Build configuration list for PBXNativeTarget "Durango.AxisPowers.Tech" */;
+			buildConfigurationList = D894B67A1F2B5753005CF741 /* Build configuration list for PBXNativeTarget "Murango" */;
 			buildPhases = (
 				D894B6641F2B5753005CF741 /* Sources */,
 				D894B6651F2B5753005CF741 /* Frameworks */,
@@ -88,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Durango.AxisPowers.Tech;
+			name = Murango;
 			productName = Durango.AxisPowers.Tech;
-			productReference = D894B6681F2B5753005CF741 /* Durango.AxisPowers.Tech.app */;
+			productReference = D894B6681F2B5753005CF741 /* Murango.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,12 +108,11 @@
 				TargetAttributes = {
 					D894B6671F2B5753005CF741 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6GASZMH22X;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = D894B6631F2B5753005CF741 /* Build configuration list for PBXProject "Durango.AxisPowers.Tech" */;
+			buildConfigurationList = D894B6631F2B5753005CF741 /* Build configuration list for PBXProject "Murango" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D894B6671F2B5753005CF741 /* Durango.AxisPowers.Tech */,
+				D894B6671F2B5753005CF741 /* Murango */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +151,7 @@
 			files = (
 				A3AFCDC41F2D414000B35FEB /* RegionInfoViewController.swift in Sources */,
 				A3AFCDC21F2C06C900B35FEB /* ReadCSV.swift in Sources */,
+				A3AFCDC81F2D670800B35FEB /* CrimeCell.swift in Sources */,
 				D894B66E1F2B5753005CF741 /* ViewController.swift in Sources */,
 				D894B66C1F2B5753005CF741 /* AppDelegate.swift in Sources */,
 			);
@@ -275,10 +278,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6GASZMH22X;
-				INFOPLIST_FILE = Durango.AxisPowers.Tech/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Murango/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cgscomputing.NathanHeldon.Durango-AxisPowers-Tech";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgscomputing.NathanHeldon.Murango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,10 +291,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6GASZMH22X;
-				INFOPLIST_FILE = Durango.AxisPowers.Tech/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Murango/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cgscomputing.NathanHeldon.Durango-AxisPowers-Tech";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgscomputing.NathanHeldon.Murango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D894B6631F2B5753005CF741 /* Build configuration list for PBXProject "Durango.AxisPowers.Tech" */ = {
+		D894B6631F2B5753005CF741 /* Build configuration list for PBXProject "Murango" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D894B6781F2B5753005CF741 /* Debug */,
@@ -309,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D894B67A1F2B5753005CF741 /* Build configuration list for PBXNativeTarget "Durango.AxisPowers.Tech" */ = {
+		D894B67A1F2B5753005CF741 /* Build configuration list for PBXNativeTarget "Murango" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D894B67B1F2B5753005CF741 /* Debug */,

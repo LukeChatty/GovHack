@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++10C8E37",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A41C2B8" : 9223372036854775807,
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A262012" : 9223372036854775807,
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++10C8E37" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A20656F9-BD70-4B0A-AEFA-5644688B46B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A41C2B8" : "",
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A262012" : "",
+    "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++10C8E37" : "GovHack\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Murango",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Murango.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LukeChatty\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++10C8E37"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LukeChatty\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A262012"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CGS-Nathan-Heldon\/GovHack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B4B17379A6F4E1969573914B002A8BEE062A3B6+++A41C2B8"
+    }
+  ]
+}
