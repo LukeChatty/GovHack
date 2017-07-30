@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -117,17 +118,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Rating: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL9-co-6cR">
-                                <rect key="frame" x="90.5" y="79" width="194" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL9-co-6cR">
+                                <rect key="frame" x="124" y="90" width="127" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="pP3-5R-NWO"/>
+                                    <constraint firstAttribute="height" constant="94" id="RY2-9r-jUc"/>
+                                    <constraint firstAttribute="width" constant="127" id="wGS-Lu-afI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IwZ-4y-z8Y" customClass="CollectionView" customModule="Murango" customModuleProvider="target">
-                                <rect key="frame" x="16" y="138" width="343" height="338"/>
+                                <rect key="frame" x="16" y="205" width="343" height="338"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="338" id="4xw-o8-iPV"/>
@@ -174,13 +176,46 @@
                                     <outlet property="delegate" destination="zlu-yk-AyC" id="Emm-PT-Q1r"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-If-3bC">
+                                <rect key="frame" x="148.5" y="64" width="78" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiJ-ab-aoU">
+                                <rect key="frame" x="66" y="156" width="243" height="32"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Qba-bo-AFf"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-EH-q0H">
+                                <rect key="frame" x="52" y="519" width="271" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IwZ-4y-z8Y" firstAttribute="top" secondItem="CL9-co-6cR" secondAttribute="bottom" constant="19" id="CPz-JP-IHb"/>
+                            <constraint firstAttribute="trailing" secondItem="uiJ-ab-aoU" secondAttribute="trailing" constant="66" id="9J9-ly-J2s"/>
+                            <constraint firstItem="IwZ-4y-z8Y" firstAttribute="top" secondItem="uiJ-ab-aoU" secondAttribute="bottom" constant="17" id="MF8-fd-yzz"/>
+                            <constraint firstItem="uiJ-ab-aoU" firstAttribute="top" secondItem="Xl6-If-3bC" secondAttribute="bottom" constant="75" id="MWE-kd-LMZ"/>
+                            <constraint firstItem="uiJ-ab-aoU" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="S13-Xq-l4B"/>
+                            <constraint firstItem="iIQ-T1-Ezh" firstAttribute="top" secondItem="FTW-EH-q0H" secondAttribute="bottom" constant="8" id="awg-Vs-X2o"/>
                             <constraint firstItem="CL9-co-6cR" firstAttribute="top" secondItem="Lu2-5Y-phF" secondAttribute="bottom" constant="15" id="ghI-iN-Ncj"/>
+                            <constraint firstItem="Xl6-If-3bC" firstAttribute="top" secondItem="Lu2-5Y-phF" secondAttribute="bottom" id="gju-hW-JT6"/>
                             <constraint firstItem="CL9-co-6cR" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="gvO-hO-Mhy"/>
+                            <constraint firstItem="uiJ-ab-aoU" firstAttribute="leading" secondItem="WuU-QG-ZaZ" secondAttribute="leading" constant="66" id="kTg-qe-Ytl"/>
+                            <constraint firstItem="FTW-EH-q0H" firstAttribute="leading" secondItem="WuU-QG-ZaZ" secondAttribute="leadingMargin" constant="36" id="n7D-9s-Joo"/>
+                            <constraint firstItem="Xl6-If-3bC" firstAttribute="leading" secondItem="WuU-QG-ZaZ" secondAttribute="leadingMargin" constant="132.5" id="n9z-bL-Be7"/>
+                            <constraint firstItem="uiJ-ab-aoU" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="r9V-vd-bVl"/>
+                            <constraint firstItem="Xl6-If-3bC" firstAttribute="top" secondItem="Lu2-5Y-phF" secondAttribute="bottom" id="rRO-W9-SXf"/>
+                            <constraint firstItem="FTW-EH-q0H" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="rzZ-Ai-A9x"/>
                             <constraint firstItem="IwZ-4y-z8Y" firstAttribute="centerX" secondItem="WuU-QG-ZaZ" secondAttribute="centerX" id="tj8-Lz-2ph"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xl6-If-3bC" secondAttribute="trailing" constant="132.5" id="wL6-US-MQ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FTW-EH-q0H" secondAttribute="trailing" constant="36" id="wsM-tS-3AH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name" id="3dH-xH-tbp">
@@ -192,6 +227,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="IwZ-4y-z8Y" id="tyW-q0-gbO"/>
+                        <outlet property="riskRatingBar" destination="uiJ-ab-aoU" id="vf1-OW-qTT"/>
                         <outlet property="riskRatingLabel" destination="CL9-co-6cR" id="vip-c1-dac"/>
                     </connections>
                 </viewController>

@@ -13,7 +13,7 @@ import CoreLocation
 class ViewController: UIViewController {
     
     var riskRatings = [String: Int]()
-    var crimeValues = [[String]]()
+    var crimeValues = [String:[Int]]()
     
     @IBOutlet weak var Map: MKMapView!
     
@@ -25,9 +25,10 @@ class ViewController: UIViewController {
         
         print(riskRatings)
         
-        crimeValues = readCSVFile(fileName: "CrimeStats", fileType: "csv")
+        crimeValues = CSVDataToDictionary(data: readCSVFile(fileName: "CrimeStats", fileType: "csv"))
         
-        print(crimeValues)
+        print("CRIME VALUES")
+        print(crimeValues["Woden"])
         
     }
     
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
         let title = segue.identifier!
         targetController.title = title
         targetController.riskRating = riskRatings[title]!
+        targetController.crimeValues = crimeValues["Woden"]!
     }
     
 
