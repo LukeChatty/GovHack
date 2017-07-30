@@ -29,9 +29,10 @@ class RegionInfoViewController: UIViewController, UICollectionViewDelegate, UICo
         
         colourBar(value: riskRating)
         
+        text(name: self.title!)
+        
         //riskRatingBar.roundCorners(corners: [.topRight, .bottomLeft, .bottomRight, .topLeft], radius: 10)
         
-        textBox.isEditable = false
         
     }
     
@@ -62,6 +63,25 @@ class RegionInfoViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.countLabel.text = String(crimeValues[indexPath.row])
         
         return cell
+    }
+    
+    func text(name: String) {
+        print(name)
+        if name == "Belconnen" {
+            textBox.text = "Belconnen is located in the North Western corner of Canberra. Located  at 35.2167°S, 149.0833°E, Belconnen is joint 2nd worst safety rating along with Tuggeranong and has the highest road fatality statistics."
+        } else if name == "Gungahlin" {
+            textBox.text = "Gunghalin is the most Northern region in ACT. It is located at 35.1831°S, 149.1330°E and has the least amount of road fatalities along with Weston Creek"
+        } else if name == "North Canberra" {
+            textBox.text = "North Canberra has the worst safety rating from all the regions in Canberra. Located in the Northern middle part of Canberra as the name suggests, 35.34378°S and 149.083°E. The main reason for North Canberra’s safety rating being so high is because it has a major city in the middle and therefore more people. This skewed the data."
+        } else if name == "South Canberra" {
+            textBox.text = "South Canberra is in the middle for safety rating. Located at 35.3051°S, 149.0981°E, South Canberra has a safety rating of 40 and has the joint lowest sexual assaults in the ACT."
+        } else if name == "Tuggeranong" {
+            textBox.text = "Tuggeranong is located at the very southern part of Canberra and is 2nd for worst safety rating. It has the highest sexual assaults in the ACT and is located at 35.4244°S, 149.0888°E."
+        } else if name == "Weston Creek" {
+            textBox.text = "Weston Creek is rated the Safest place to live in the ACT with a safety rating of 16. It is located at 35.3410°S, 149.0525°E and has 0 homicides! Weston Creek is located at the Southern West region of ACT."
+        } else if name == "Woden" {
+            textBox.text = "Woden is joint 2nd in best safety rating along with Gunghalin. Located at 35.3452°S, 149.0950°E and has a major shopping centre in Westfield so more people will skewer the stats for theft, assault and homicides."
+        }
     }
 
     /*

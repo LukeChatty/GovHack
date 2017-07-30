@@ -23,23 +23,20 @@ class ViewController: UIViewController {
         
         riskRatings = riskRating(dictionary: CSVDataToPoints(data: CSVDataToDictionary(data: readCSVFile(fileName: "CrimeStats", fileType: "csv"))))
         
-        print(riskRatings)
-        
         crimeValues = CSVDataToDictionary(data: readCSVFile(fileName: "CrimeStats", fileType: "csv"))
-        
-        print("CRIME VALUES")
-        print(crimeValues["Woden"])
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationNavigationController = segue.destination as! UINavigationController
-        let targetController = destinationNavigationController.topViewController as! RegionInfoViewController
+        if segue.identifier != "home" {
+            let destinationNavigationController = segue.destination as! UINavigationController
+            let targetController = destinationNavigationController.topViewController as! RegionInfoViewController
 
-        let title = segue.identifier!
-        targetController.title = title
-        targetController.riskRating = riskRatings[title]!
-        targetController.crimeValues = crimeValues[title]!
+            let title = segue.identifier!
+            targetController.title = title
+            targetController.riskRating = riskRatings[title]!
+            targetController.crimeValues = crimeValues[title]!
+        }
     }
     
 
