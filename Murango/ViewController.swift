@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let title = segue.identifier!
         targetController.title = title
         targetController.riskRating = riskRatings[title]!
-        targetController.crimeValues = crimeValues["Woden"]!
+        targetController.crimeValues = crimeValues[title]!
     }
     
 
